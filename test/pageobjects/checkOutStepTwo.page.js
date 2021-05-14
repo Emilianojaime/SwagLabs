@@ -1,15 +1,20 @@
-const CheckOutStepTwo = require('./page');
+const CheckOutPage = require('./checkOut.page');
+const Page = require('./page');
 
 class CheckOutStepTwoPage extends Page {
    
     // CheckOutStepTwo Page Selectors
 
-    get inputUsername () { return $('#username') }
-    get inputPassword () { return $('#password') }
-    get btnSubmit () { return $('button[type="submit"]') }
+    get cancelBtn () { return $('#cancel') }
+    get finishBtn () { return $('#finish') }
+    
 
     open () {
-        return super.open('checkout-step-two.html');
+        CheckOutPage.open();
+        CheckOutPage.firstNameInput.setValue('Emiliano')
+        CheckOutPage.lastNameInput.setValue('Jaime')
+        CheckOutPage.zipCodeInput.setValue('2000')
+        CheckOutPage.continueCheckOutBtn.click();
     }
 
     // Buttons actions

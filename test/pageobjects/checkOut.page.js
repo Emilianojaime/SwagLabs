@@ -1,18 +1,26 @@
-const CheckOut = require('./page');
+const InventoryPage =  require('./inventory.page');
+const CartPage = require('./cart.page');
+const Page = require('./page');
 
 class CheckOutPage extends Page {
-   
-    // CheckOut Page Selectors
 
-    get inputUsername () { return $('#username') }
-    get inputPassword () { return $('#password') }
-    get btnSubmit () { return $('button[type="submit"]') }
-
-    open () {
-        return super.open('checkout-step-one.html');
+       
+        // ChekOut Page Selectors
+    
+        get firstNameInput () { return $('#first-name') }
+        get lastNameInput () { return $('#last-name') }
+        get zipCodeInput () { return $('#postal-code') }
+        get cancelBtn () { return $('#cancel') }
+        get continueCheckOutBtn () { return $('#continue') }
+        
+       
+    
+        open () {
+           InventoryPage.open();
+           InventoryPage.btnCart.click();
+           CartPage.checkOutBtn.click();
+        }
+    
     }
-
-    // Buttons actions
-}
 
 module.exports = new CheckOutPage();

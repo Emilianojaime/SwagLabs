@@ -1,15 +1,15 @@
-const CheckOutComplete = require('./page');
+const CheckOutStepTwoPage = require('./checkOutStepTwo.page');
+const Page = require('./page');
 
 class CheckOutCompletePage extends Page {
    
     // CheckOutComplete Page Selectors
 
-    get inputUsername () { return $('#username') }
-    get inputPassword () { return $('#password') }
-    get btnSubmit () { return $('button[type="submit"]') }
+    get backHomeBtn () { return $('#back-to-products') }
 
     open () {
-        return super.open('checkout-complete.html');
+        CheckOutStepTwoPage.open();
+        CheckOutStepTwoPage.finishBtn.click();
     }
 
     // Buttons actions
