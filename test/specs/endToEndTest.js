@@ -1,13 +1,13 @@
-const LoginPage = require('../pageobjects/login.page');
 const CartPage = require('../pageobjects/cart.page');
 const InventoryPage = require('../pageobjects/inventory.page');
 const CheckOutPage = require('../pageobjects/checkOut.page');
 const CheckOutStepTwoPage = require('../pageobjects/checkOutStepTwo.page');
 const CheckOutCompletePage = require('../pageobjects/checkOutComplete.page');
 
-describe('Testing end to end user scenarios', () => {
+describe('Testing end to end user scenarios :', () => {
 
-  /* it('successful purchase process of 1 item', () => {
+  it('Successful purchase process of 1 item', () => {
+
     InventoryPage.open();
     InventoryPage.itemBackpackAddToCard.click();
     InventoryPage.btnCart.click();
@@ -32,12 +32,13 @@ describe('Testing end to end user scenarios', () => {
     expect(CheckOutCompletePage.infoOrder).toBeDisplayed();
     expect(CheckOutCompletePage.ponyImg).toBeDisplayed();
     CheckOutCompletePage.backHomeBtn.click();
-    expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html')
-    browser.pause(2000);
+    expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
     browser.reloadSession();
+
   })
 
-  it('successful purchase process of 3 items', () => {
+  it('Successful purchase process of 3 items', () => {
+
     InventoryPage.open();
     InventoryPage.itemBackpackAddToCard.click();
     InventoryPage.itemSauceAddToCard.click();
@@ -70,12 +71,13 @@ describe('Testing end to end user scenarios', () => {
     expect(CheckOutCompletePage.infoOrder).toBeDisplayed();
     expect(CheckOutCompletePage.ponyImg).toBeDisplayed();
     CheckOutCompletePage.backHomeBtn.click();
-    expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html')
-    browser.pause(2000);
+    expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
     browser.reloadSession();
+
   })
 
   it('Testing Cancel Punchase in checkoutStepOne Page', () => {
+
     InventoryPage.open();
     InventoryPage.itemBackpackAddToCard.click();
     InventoryPage.itemSauceAddToCard.click();
@@ -86,11 +88,12 @@ describe('Testing end to end user scenarios', () => {
     CheckOutPage.zipCodeInput.setValue('2000');
     CheckOutPage.cancelBtn.click();
     expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html'); // should return to the inventory page?
-    browser.pause(2000);
     browser.reloadSession();
+
   })
 
   it('Testing Cancel Punchase in checkoutStepTwo Page', () => {
+
     InventoryPage.open();
     InventoryPage.itemBackpackAddToCard.click();
     InventoryPage.itemSauceAddToCard.click();
@@ -102,9 +105,7 @@ describe('Testing end to end user scenarios', () => {
     CheckOutPage.continueCheckOutBtn.click();
     CheckOutStepTwoPage.cancelBtn.click();
     expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
-    browser.pause(2000);
     browser.reloadSession();
-  }) */
 
-
+  })
 })

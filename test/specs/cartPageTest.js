@@ -1,12 +1,11 @@
 const InventoryPage = require('../pageobjects/inventory.page');
 const CartPage = require('../pageobjects/cart.page');
 
-describe('Testing Cart Page functionalities', () => {
+describe('Testing Cart Page functionalities :', () => {
 
   it('Testing Cart display and remove buttons', () => {
 
     InventoryPage.open();
-    browser.pause(2000);
     InventoryPage.itemBackpackAddToCard.click();
     InventoryPage.itemSauceAddToCard.click();
     InventoryPage.btnCart.click();
@@ -35,14 +34,12 @@ describe('Testing Cart Page functionalities', () => {
     expect(InventoryPage.itemSauceRemove).not.toBeDisplayed();
     expect(InventoryPage.itemBackpackAddToCard).toBeDisplayed();
     expect(InventoryPage.itemSauceAddToCard).toBeDisplayed();
-    
-
+  
   })
 
-  /* it('Testing Cart display and reset app button', () => {
+  it('Testing Cart display and reset app button', () => {
 
     InventoryPage.open();
-    browser.pause(2000);
     InventoryPage.itemBackpackAddToCard.click();
     InventoryPage.itemSauceAddToCard.click();
     InventoryPage.btnCart.click();
@@ -62,6 +59,5 @@ describe('Testing Cart Page functionalities', () => {
     expect(InventoryPage.itemSauceDescription).not.toBeDisplayed(); 
     expect(InventoryPage.price999).not.toBeDisplayed(); 
     
-  }) */
-
+  })
 })

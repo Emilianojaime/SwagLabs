@@ -12,6 +12,7 @@ class LoginPage extends Page {
     get errorBadLogin () { return $('h3*=Username and password do not match') };
     get errorUsername () { return $('h3*=Username is required') };
     get errorPassword () { return $('h3*=Password is required') };
+    
     open () {
         return super.open('');
     }
