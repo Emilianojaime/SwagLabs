@@ -1,17 +1,18 @@
-Final Week of QA course - Designing an Automated test with WebDriverIO
-
-About :
+# Final Week of QA course 
+### Designing an Automated test with WebDriverIO
 In this project we are goint to use WebDriverIo to test diferent feactures of the page https://www.saucedemo.com/ .
 
-Stack:
+
+###  Stack:
 - Node Js
 - Visual Studio Code
 - Chrome Browser 
 - WebDriverIO
 
-
-
- Instalation
+ ###
+  Instalation
+ ---
+ 
 
 $npm install
 
