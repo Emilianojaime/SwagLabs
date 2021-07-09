@@ -1,6 +1,6 @@
-# Final Week of QA course - Designing an Automated test with WebDriverIO
----
-#About :
+Final Week of QA course - Designing an Automated test with WebDriverIO
+
+About :
 In this project we are goint to use WebDriverIo to test diferent feactures of the page https://www.saucedemo.com/ .
 
 Stack:
@@ -9,14 +9,14 @@ Stack:
 - Chrome Browser 
 - WebDriverIO
 
----
 
-#Instalation
 
-$ npm install
+ Instalation
 
-$ npm init to create a package.Json
+$npm install
 
-$ npm install @wdio/cli
+$npm init to create a package.Json
 
-$ npx wdio config
+$npm install @wdio/cli
+
+$npx wdio config
